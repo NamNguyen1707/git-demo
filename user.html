@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User - Demo Git</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><h1>Chuc nang USER</h1></header>
+  <nav><a href="index.html">Trang chu</a></nav>
+
+  <main>
+    <!-- >>> BAT CODE USER - XOA DONG NAY
+    <div class="card">
+      <h2>Dang ky tai khoan</h2>
+      <input id="u-name" placeholder="Ten nguoi dung">
+      <input id="u-email" placeholder="Email">
+      <button id="btn-register">Dang ky</button>
+      <p id="u-msg"></p>
+    </div>
+    <div class="card">
+      <h2>Danh sach user (<span id="u-count">0</span>)</h2>
+      <table>
+        <thead><tr><th>#</th><th>Ten</th><th>Email</th></tr></thead>
+        <tbody id="u-list"></tbody>
+      </table>
+      <button id="btn-clear">Xoa tat ca user</button>
+    </div>
+    <script>
+      const users = [];
+      function renderUsers() {
+        const tbody = document.getElementById('u-list');
+        tbody.innerHTML = '';
+        users.forEach(function (u, i) {
+          tbody.innerHTML += '<tr><td>' + (i + 1) + '</td><td>' + u.name + '</td><td>' + u.email + '</td></tr>';
+        });
+        document.getElementById('u-count').textContent = users.length;
+      }
+      document.getElementById('btn-register').addEventListener('click', function () {
+        const name = document.getElementById('u-name').value.trim();
+        const email = document.getElementById('u-email').value.trim();
+        const msg = document.getElementById('u-msg');
+        if (!name || !email) { msg.textContent = 'Vui long nhap day du!'; return; }
+        users.push({ name: name, email: email });
+        msg.textContent = 'Dang ky thanh cong: ' + name;
+        renderUsers();
+      });
+      document.getElementById('btn-clear').addEventListener('click', function () {
+        users.length = 0;
+        renderUsers();
+      });
+    </script>
+    XOA DONG NAY <<< -->
+  </main>
+</body>
+</html>
